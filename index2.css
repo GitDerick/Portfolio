@@ -1,0 +1,74 @@
+Section Projects
+#projects-section {
+    background-color: gray;
+    padding: 60px 0;
+}
+
+/* Projets */
+#projects-section .project {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Garder l'effet d'agrandissement au survol */
+#projects-section .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay toujours visible */
+#projects-section .project .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent */
+    opacity: 1; /* Toujours visible */
+    visibility: visible; /* Forcer la visibilité */
+    transition: none; /* Supprimer l'animation */
+}
+
+/* Texte toujours visible */
+#projects-section .project .text {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7); /* Fond sombre pour le texte */
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 1; /* Toujours visible */
+    visibility: visible; /* Forcer la visibilité */
+    transition: none; /* Supprimer l'animation */
+}
+
+/* Lien du titre de projet */
+#projects-section .project .text h3 a {
+    color: #ffc107; /* Couleur du texte */
+    text-decoration: none; /* Supprimer le soulignement */
+}
+
+/* Effet sur le lien au survol */
+#projects-section .project .text h3 a:hover {
+    color: #ff8800; /* Couleur plus vive au survol */
+}
+
+#hh3{
+    color: #ffc107;
+}
+
+
+/* Boutons GitHub */
+#projects-section .btn-github {
+    display: inline-block;
+    margin-top: 10px; /* Espacement entre le bouton et le texte */
+    padding: 10px 20px; /* Taille du bouton */
+    font-size: 14px; /* Taille du texte */
+    font-weight: bold;
+    color: #fff; /* Texte blanc */
+    background-color: #24292e; /* Couleur de fond GitHub */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out; /* Animation couleur */
+}
+
+/* Effet sur le bouton au survol */
+#projects-section .btn-github:hover {
+    background-color: #ff8800; /* Couleur plus claire au survol */
+    color: #fff; /* Garder le texte blanc */
+}
